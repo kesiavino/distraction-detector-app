@@ -77,7 +77,7 @@ def get_status():
   
 def run_flask_app():
 	print("Starting Flask server on http://localhost:5000")
-	app.run(host='0.0.0.0', port=5000, debug=False, use_reloader=False)
+	app.run(host='0.0.0.0', port=5001, debug=False, use_reloader=False)
     
 # --- Main Application Logic: Camera and MediaPipe Integration ---
 def camera_and_detection_loop():
@@ -126,6 +126,10 @@ def camera_and_detection_loop():
   
 		if cv2.waitKey(5) & 0xFF == 27: # ESC to exit
 			break
+
+		if face_currently_detected:
+			print(f"DEVELOPMENT: Face detected at timestamp {frame_timestamp_ms}!")
+
 	cap.release()
 	cv2.destroyAllWindows()
 	if landmarker:
