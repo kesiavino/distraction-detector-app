@@ -24,6 +24,12 @@ This project aims to detect user distraction using a webcam and MediaPipe for fa
    python -m venv .venv
    source .venv/bin/activate  # Linux/macOS
    # .venv\Scripts\activate    # Windows
+2.5 Activate venv python interpreter in vscode
+	 cmd+shift+p
+	 Type Python: Select Interpreter
+	 select enter interpreter path
+	 go into your terminal, do cd .venv/bin/ and then type pwd to get the full working directory path
+	 copy that and paste while augmenting "/python" at the end
 3. Install dependencies:
    pip install -r requirements.txt
 4. Run the application:
