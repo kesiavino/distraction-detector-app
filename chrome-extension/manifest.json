@@ -1,0 +1,28 @@
+{
+	"manifest_version": 3,
+	"name": "Distraction Detector",
+	"version": "1.0.0",
+	"description": "Blinks an icon if user distraction is detected.",
+	"permissions": [
+		"alarms"
+	],
+	"host_permissions": [
+		"http://localhost:5000/*"
+	],
+	"action": {
+		"default_icon": {
+			"16": "icons/icon_normal_16.png",
+			"48": "icons/icon_normal_48.png",
+			"128": "icons/icon_normal_128.png"
+		},
+		"default_title": "Distraction Detector"
+	},
+	"background": {
+		"service_worker": "background.js"
+	},
+	"icons": {
+		"16": "icons/icon_normal_16.png",
+		"48": "icons/icon_normal_48.png",
+		"128": "icons/icon_normal_128.png"
+	}
+}
