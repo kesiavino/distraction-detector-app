@@ -1,5 +1,8 @@
 # Distraction Detector App
 
+*** forked from [horaja/distraction-detector-app](https://github.com/horaja/distraction-detector-app).  
+> Contributions by Kesia Ann Vino: Team leader - working on the development of the AI algorithm, focusing on building a learning model capable of adapting to user-specific expressions such as frustration and confusion over time through continuous feedback and expression tracking.
+
 This project aims to detect user distraction using a webcam and MediaPipe for facial landmark detection. An alert is then shown via a Chrome browser extension.
 
 ## Project Structure
